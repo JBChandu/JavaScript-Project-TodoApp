@@ -40,7 +40,7 @@ output.addEventListener("click", (e) => {
     let newVal = prompt("enter what you need to update", editable);
     if (newVal !== "") {
       let newOne = document.getElementById(`${editableId}`);
-      newOne.textContent = newVal;
+      newOne.textContent = newVal.trim();
       newOne.append(editElem);
       newOne.append(delElem);
     } else {
